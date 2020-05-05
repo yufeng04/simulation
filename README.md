@@ -11,3 +11,9 @@
 8. analysis of anti differential attack ability (NPCR UACI)
 9. adjacent pixel correlation
 10. select plaintext attack (codebook)
+
+## `computeComparedData.m` is the entry
+* generate the data used in paper; compare IC-BSIF and improved algorithm
+1. compute the NPCR and UACI (6.2.2)
+2. compute the correlations (6.2.2)
+3. compute the efficiency (6.3)

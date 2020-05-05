@@ -23,6 +23,10 @@ if type == 'improved'
     encrypted_image = improvedEncrypt(image, keys, 3);
     encrypted_image_changed = improvedEncrypt(img_changed, keys, 3);
 end
+if type == 'improve4'
+    encrypted_image = improvedEncrypt(image, keys, 4);
+    encrypted_image_changed = improvedEncrypt(img_changed, keys, 4);
+end
 
 % NPCR UACI
 % the max pixel value

@@ -15,13 +15,13 @@ clear;clc;
 % the round time of encrypting
 round_time = 4;
 % get the plain image
-lena = imread('../test_img/LenaRGB1.bmp');
-baboon = imread('../test_img/BaboonRGB.bmp');
+lena = imread('./g512_006/lena.pgm');
+% baboon = imread('./g512_001/47.pgm');
 
 % adjust the plain image
 % to gray image
-lena = rgb2gray(lena);
-baboon = rgb2gray(baboon);
+% lena = rgb2gray(lena);
+% baboon = rgb2gray(baboon);
 % % adjust the size
 adjust_size = [64, 64];
 lena = imresize(lena,adjust_size);
@@ -61,8 +61,8 @@ keys = generateKey(4);
 
 %8. analysis of anti differential attack ability (NPCR UACI)
 %parmas: (plain image, secret key, type of algorithm)
-% original_NPCR_UACI = differenceAnalysis(baboon, keys, 'original')
-% improved_NPCR_UACI = differenceAnalysis(baboon, keys, 'improved')
+% original_NPCR_UACI = differenceAnalysis(lena, keys, 'original')
+% improved_NPCR_UACI = differenceAnalysis(lena, keys, 'improved')
 % differenceLena(lena, keys);
 
 %9. adjacent pixel correlation
@@ -73,8 +73,6 @@ keys = generateKey(4);
 % params: (plain image, secret keys
 %          show the encrypted/plain/attacked image)
 attcked_result = breakICBSIF(lena, keys, true);
-
-
 
 
 

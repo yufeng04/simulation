@@ -12,7 +12,7 @@
 9. adjacent pixel correlation
 10. select plaintext attack (codebook)
 
-## `computeComparedData.m` is the entry
+## `computeComparedData.m` is the file to caculate compareed data
 * generate the data used in paper; compare IC-BSIF and improved algorithm
 1. compute the NPCR and UACI (6.2.2)
 2. compute the correlations (6.2.2)
